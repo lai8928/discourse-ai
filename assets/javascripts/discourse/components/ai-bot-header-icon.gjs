@@ -23,6 +23,7 @@ export default class AiBotHeaderIcon extends Component {
   }
 
   get showHeaderButton() {
+    console.log("[AiBotHeaderIcon] showHeaderButton 計算中: bots.length =", this.bots.length, ", ai_bot_add_to_header =", this.siteSettings.ai_bot_add_to_header);
     return this.bots.length > 0 && this.siteSettings.ai_bot_add_to_header;
   }
 
